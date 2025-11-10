@@ -1,29 +1,29 @@
-PLC Co-pilot: AI-Powered Industrial Automation Assistant
-An advanced AI assistant designed to accelerate industrial automation by generating, verifying, and explaining IEC 61131-3 Structured Text code. This tool acts as an intelligent partner for PLC programmers and automation engineers.
+AI Powered Vital Monitor
+An advanced AI-powered system designed for monitoring and analyzing vital signs in healthcare environments. This intelligent platform leverages AI to generate diagnostic code, analyze patient data patterns, and provide real-time vital sign monitoring.
 
 🚀 Key Features
-Advanced AI Code Generation: Leverages Google's Gemini models to translate natural language descriptions into high-quality, universally compatible Structured Text.
+AI-Powered Vital Sign Analysis: Leverages Google's Gemini models to analyze patient vital signs and generate intelligent alerts and recommendations.
 
-Retrieval-Augmented Generation (RAG): The AI's knowledge is augmented with information from your private technical manuals and PDFs, ensuring context-aware and factually grounded answers.
+Retrieval-Augmented Generation (RAG): The AI's knowledge is augmented with information from medical protocols, guidelines, and documentation, ensuring context-aware and medically sound analysis.
 
-AI Self-Correction Loop: A unique two-step verification process where the AI reviews and corrects its own generated code, dramatically improving reliability and adherence to standards.
+AI Self-Correction Loop: A unique two-step verification process where the AI reviews and corrects its own analysis, dramatically improving reliability and accuracy of vital sign interpretation.
 
-Structured, Multi-Part Output: Provides a complete solution package including code, variable declarations, a professional explanation, verification notes, and a simulation trace.
+Structured, Multi-Part Output: Provides comprehensive vital sign analysis including measurements, trend analysis, professional medical interpretation, verification notes, and alert notifications.
 
 Professional Microservices Architecture: Built with a decoupled backend featuring a main orchestrator and a specialized rag_service for scalability and robustness.
 
 Fully Containerized: The entire application is containerized with Docker, ensuring a consistent and easy-to-manage development and deployment environment.
 
 🏛️ Architecture Overview
-The PLC Co-pilot is built on a modern, multi-service architecture designed for scalability and maintainability.
+The AI Powered Vital Monitor is built on a modern, multi-service architecture designed for scalability and maintainability.
 
 (It is highly recommended to create a simple diagram and link it here)
 
-Frontend: A static, single-page application built with HTML, CSS, and JavaScript that provides the user interface.
+Frontend: A static, single-page application built with HTML, CSS, and JavaScript that provides the user interface for vital sign monitoring.
 
-Orchestrator Service: The central "brain" of the application. A FastAPI server that handles user prompts, coordinates with the RAG service, and manages the multi-step LLM workflow.
+Orchestrator Service: The central "brain" of the application. A FastAPI server that handles user queries, coordinates with the RAG service, and manages the multi-step LLM workflow for vital sign analysis.
 
-RAG Service: A specialized FastAPI microservice that provides a queryable knowledge base, running a Chroma vector database to find relevant context from source documents.
+RAG Service: A specialized FastAPI microservice that provides a queryable medical knowledge base, running a Chroma vector database to find relevant context from medical documents.
 
 🛠️ Tech Stack
 Component	Technologies & Frameworks
@@ -58,7 +58,7 @@ Code snippet
 
 GOOGLE_API_KEY=your_actual_google_api_key_here
 Add Knowledge Base Documents:
-Place your PLC technical manuals (PDF files) inside the ./rag_source_documents directory.
+Place your medical protocols and vital sign documentation (PDF files) inside the ./rag_source_documents directory.
 
 Build the RAG Index:
 This is a one-time setup step to create the vector database.
@@ -85,15 +85,12 @@ http://localhost:8080
 🚀 Usage
 Open the web interface.
 
-Type a natural language description of the PLC logic you need in the chat input.
+Type a description of the vital signs you need to monitor or analyze in the chat input.
 
 Press "Send" or hit Enter.
 
-The AI will generate the full solution in the output panel, organized into tabs for Structured Text, Variables, and Simulation.
+The AI will generate the full analysis in the output panel, organized into tabs for analysis results, data parameters, and monitoring traces.
 
-You can edit the generated code and variables directly in the text areas.
+You can edit the generated analysis and parameters directly in the text areas.
 
-Use the download buttons to save the generated code and variables as separate files.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Use the download buttons to save the generated analysis and parameters as separate files.
