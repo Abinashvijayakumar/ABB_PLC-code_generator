@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLC Co-pilot | AI-Powered Code Generation</title>
+    <title>AI Powered Vital Monitor | AI-Powered Healthcare Monitoring</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <h1><i class="fas fa-robot"></i> PLC Co-pilot</h1>
+                <h1><i class="fas fa-heartbeat"></i> AI Powered Vital Monitor</h1>
             </div>
             <div class="header-controls">
                 <button class="btn btn-secondary" id="helpBtn"><i class="fas fa-question-circle"></i> Help</button>
@@ -31,11 +31,11 @@
                 <div class="chat-container">
                     <div class="chat-messages" id="chatMessages">
                         <div class="system-message">
-                            <p>Welcome! Describe your PLC logic, and I will generate and review the code for you.</p>
+                            <p>Welcome! Describe the vital signs you need to monitor, and I will generate analysis and monitoring code for you.</p>
                         </div>
                     </div>
                     <div class="chat-input-container">
-                        <textarea id="promptInput" placeholder="e.g., 'When the start button is pressed, run the main motor...'"></textarea>
+                        <textarea id="promptInput" placeholder="e.g., 'Monitor heart rate and blood pressure for patient...'"></textarea>
                         <input type="file" id="fileAttachmentInput" accept=".txt" style="display: none;">
                         <button class="btn btn-icon" id="attachFileBtn" title="Attach .txt File"><i class="fas fa-paperclip"></i></button>
                         <button class="btn btn-primary" id="sendPrompt"><i class="fas fa-paper-plane"></i></button>
@@ -51,9 +51,9 @@
                     </div>
                 </div>
                 <div class="output-tabs">
-                    <button class="tab-button active" data-tab="code">Structured Text</button>
-                    <button class="tab-button" data-tab="vars">Variables</button>
-                    <button class="tab-button" data-tab="sim">Simulation</button>
+                    <button class="tab-button active" data-tab="code">Analysis Code</button>
+                    <button class="tab-button" data-tab="vars">Parameters</button>
+                    <button class="tab-button" data-tab="sim">Monitoring Trace</button>
                 </div>
                 <div class="output-content">
                     <div id="code-tab" class="tab-pane active">
